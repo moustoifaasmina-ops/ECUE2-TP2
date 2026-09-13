@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Exercice17 {
 
     public static void main(String[] args) throws InterruptedException {
-
         while (true) {
             System.out.println("Veuillez sélectionner le nombre d'étoile dans la base du sapin (entre 1 et 20) :");
             System.out.println("Pour quitter, taper une lettre");
@@ -16,6 +15,21 @@ public class Exercice17 {
                     System.out.println("Dessin du sapin avec une base de " + nbEtoiles);
 
                     // Saisir votre code ici
+                    int x = nbEtoiles;
+                    for(int ligne = 1; ligne <= x; ligne++) {
+                        int nbEspaces = x - ligne ;
+                        int nbEtoile = 2* ligne -1;
+
+                        for(int i =0 ; i< nbEspaces ; i++)
+                        {
+                            System.out.print(" ");
+                        }
+                        for (int t = 0; t < nbEtoile; t++) {
+                            System.out.print("*");
+                        }
+
+                        System.out.println();
+                    }
 
 
                 }
